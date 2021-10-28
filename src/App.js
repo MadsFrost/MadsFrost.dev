@@ -1,26 +1,14 @@
 import * as React from 'react';
-import styled from 'styled-components'
-import { Animate } from './Components/Animation';
-
-const AppWrapper = styled.div`
-  background-color: #012A3A;
-  height: 100vh;
-  color: #FFFFFF;
-`;
-
-
-const ChildOne = () => {return (<div><h1>Hi</h1></div>)};
-  
-const ChildTwo = () => {return (<div><p>Hi</p></div>)};
+import "tailwindcss/tailwind.css"
 
 function App() {
-  const [inProp, setInProp] = React.useState(true);
 
   return (
-    <AppWrapper>
-      <Animate in={inProp} children={<ChildOne />}/>
-      <button onClick={() => setInProp(!inProp)}>Hi</button>
-    </AppWrapper>
+    <div className='h-screen w-screen bg-gradient-to-b from-gray-900 to-gray-900 color-white text-purple-600'>
+      <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-orange-400 to-rose-400">
+        MadsFrost.dev
+      </h1>
+    </div>
       
   );
 }
