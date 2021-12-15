@@ -1,0 +1,5 @@
+.appContainer {
+  @apply h-screen w-screen overflow-scroll overflow-x-hidden;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #05204A;
+}

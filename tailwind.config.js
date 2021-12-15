@@ -6,7 +6,9 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      borderStyle: ['hover']
+    },
   },
   plugins: [],
 }

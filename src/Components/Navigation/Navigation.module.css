@@ -1,0 +1,59 @@
+.navigation {
+  @apply w-full text-white p-5 flex items-center cursor-pointer shadow-lg;
+  background-color: #05204A;
+}
+
+.navigationHeader {
+ @apply text-xl font-bold hover:text-gray-300 sm:pr-6 z-20;
+}
+
+.navigationExt {
+  @apply text-green-500;
+}
+
+.navigationLinkContainer {
+  @apply flex w-full;
+}
+
+.navigationLinksLeft {
+  @apply w-full items-center hidden sm:flex;
+}
+
+.navigationLinksRight {
+  @apply justify-end items-center hidden sm:flex;
+}
+
+.navigationLink {
+  @apply sm:mr-6 flex;
+}
+
+.navigationLinkIcon {
+  @apply pr-1;
+}
+
+.navigationLinkActive {
+  @apply text-white font-bold text-green-400 transition-all;
+  border: none !important;
+}
+
+.navigationLink:hover {
+  @apply font-bold;
+}
+
+.navigationMenuButton {
+  @apply sm:hidden flex justify-end w-full;
+}
+
+.mobileNavigationContainer {
+  @apply w-full h-screen text-white sm:hidden fixed -mt-2 pt-1 z-10 border-green-500;
+  background-color: #05204A;
+}
+
+.mobileNavigationLink {
+  @apply px-5 pt-3 w-full block transition-all;
+  height: 50px;
+}
+
+.mobileNavigationLink:hover {
+  background-color: #0a2752;
+}
